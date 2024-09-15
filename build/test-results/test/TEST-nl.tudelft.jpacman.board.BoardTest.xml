@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="nl.tudelft.jpacman.board.BoardTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-09-15T08:24:43" hostname="DESKTOP-G2KKQ5T" time="0.107">
+  <properties/>
+  <testcase name="testBoardWithNullSquare()" classname="nl.tudelft.jpacman.board.BoardTest" time="0.015"/>
+  <testcase name="testValidBoardCreation()" classname="nl.tudelft.jpacman.board.BoardTest" time="0.091"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

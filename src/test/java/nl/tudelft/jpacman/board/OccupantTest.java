@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 /**
  * Test suite to confirm that {@link Unit}s correctly (de)occupy squares.
  *
- * @author Jeroen Roosen 
+ * @author Jeroen Roosen
  *
  */
 class OccupantTest {
@@ -19,11 +19,19 @@ class OccupantTest {
     private Unit unit;
 
     /**
+     * A square to test occupation.
+     */
+    private Square square1;
+    private Square square2;
+
+    /**
      * Resets the unit under test.
      */
     @BeforeEach
     void setUp() {
         unit = new BasicUnit();
+        square1 = new BasicSquare();
+        square2 = new BasicSquare();
     }
 
     /**
@@ -31,8 +39,8 @@ class OccupantTest {
      */
     @Test
     void noStartSquare() {
-        // Remove the following placeholder:
-        assertThat(unit).isNotNull();
+        // Check if the unit has no initial square assigned
+        assertThat(unit.hasSquare()).isFalse();
     }
 
     /**
@@ -41,8 +49,14 @@ class OccupantTest {
      */
     @Test
     void testOccupy() {
-        // Remove the following placeholder:
-        assertThat(unit).isNotNull();
+        // Let the unit occupy square1
+        unit.occupy(square1);
+
+        // Check if the unit's current square is square1
+        assertThat(unit.getSquare()).isEqualTo(square1);
+
+        // Check if the square is occupied by the unit
+        assertThat(square1.getOccupants()).contains(unit);
     }
 
     /**
@@ -51,7 +65,19 @@ class OccupantTest {
      */
     @Test
     void testReoccupy() {
-        // Remove the following placeholder:
-        assertThat(unit).isNotNull();
+        // Let the unit occupy square1
+        unit.occupy(square1);
+
+        // Now reoccupy the unit to square2
+        unit.occupy(square2);
+
+        // Check if the unit's current square is square2
+        assertThat(unit.getSquare()).isEqualTo(square2);
+
+        // Check if the unit is no longer in square1
+        assertThat(square1.getOccupants()).doesNotContain(unit);
+
+        // Check if square2 is now occupied by the unit
+        assertThat(square2.getOccupants()).contains(unit);
     }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="nl.tudelft.jpacman.board.BoardTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2024-09-15T09:05:50" hostname="DESKTOP-G2KKQ5T" time="0.103">
+<testsuite name="nl.tudelft.jpacman.board.BoardTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2024-10-26T04:53:02" hostname="DESKTOP-G2KKQ5T" time="0.194">
   <properties/>
-  <testcase name="createBoardTest()" classname="nl.tudelft.jpacman.board.BoardTest" time="0.098"/>
+  <testcase name="createBoardTest()" classname="nl.tudelft.jpacman.board.BoardTest" time="0.189"/>
   <testcase name="createNullBoardTest()" classname="nl.tudelft.jpacman.board.BoardTest" time="0.004">
     <failure message="java.lang.AssertionError: Initial grid cannot contain null squares" type="java.lang.AssertionError">java.lang.AssertionError: Initial grid cannot contain null squares
 	at nl.tudelft.jpacman.board.Board.&lt;init&gt;(Board.java:27)

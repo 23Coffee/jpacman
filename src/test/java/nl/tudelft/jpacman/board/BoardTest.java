@@ -39,4 +39,5 @@ public class BoardTest {
         // Verify that squareAt(0, 0) returns null when accessed
         assertThat(b.squareAt(0, 0)).isNull();
     }
+
 }

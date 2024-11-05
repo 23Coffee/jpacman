@@ -4,7 +4,8 @@
 ![Coverage](.github/badges/jacoco.svg)
 ![Branches](.github/badges/branches.svg)
 
-
+6488217 Pattaradnai Kaeodumkoeng
+Github: 23Coffee
 ## About
 
 Pacman-like game used for teaching software testing.

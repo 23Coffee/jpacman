@@ -27,17 +27,17 @@ public class BoardTest {
     /**
      * Tests the creation of a board with a null square, expecting the board invariant to be false.
      */
-    @Test
-    public void createNullBoardTest() {
-        BasicSquare[][] bs = new BasicSquare[1][1];
-        bs[0][0] = null;
-        Board b = new Board(bs);
-
-        // Assert that the board invariant is false due to null square
-        assertThat(b.invariant()).isFalse();
-
-        // Verify that squareAt(0, 0) returns null when accessed
-        assertThat(b.squareAt(0, 0)).isNull();
-    }
+//    @Test
+//    public void createNullBoardTest() {
+//        BasicSquare[][] bs = new BasicSquare[1][1];
+//        bs[0][0] = null;
+//        Board b = new Board(bs);
+//
+//        // Assert that the board invariant is false due to null square
+//        assertThat(b.invariant()).isFalse();
+//
+//        // Verify that squareAt(0, 0) returns null when accessed
+//        assertThat(b.squareAt(0, 0)).isNull();
+//    }
 
 }

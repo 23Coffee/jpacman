@@ -30,6 +30,10 @@ jobs:
     - name: Remove Gradle cache
       run: rm -rf $HOME/.gradle/caches
 
-    - name: Build with Gradle Wrapper (Debug)
-      run: ./gradlew clean build --info --stacktrace
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+      
+    - name: Build with Gradle
+      run: xvfb-run ./gradlew build
+
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="nl.tudelft.jpacman.board.BoardFactoryTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-11-12T03:07:41" hostname="DESKTOP-G2KKQ5T" time="0.877">
+<testsuite name="nl.tudelft.jpacman.board.BoardFactoryTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-11-12T03:16:03" hostname="DESKTOP-G2KKQ5T" time="1.083">
   <properties/>
-  <testcase name="connectedEast()" classname="nl.tudelft.jpacman.board.BoardFactoryTest" time="0.85"/>
+  <testcase name="connectedEast()" classname="nl.tudelft.jpacman.board.BoardFactoryTest" time="1.053"/>
   <testcase name="connectedWest()" classname="nl.tudelft.jpacman.board.BoardFactoryTest" time="0.001"/>
-  <testcase name="worldIsRound()" classname="nl.tudelft.jpacman.board.BoardFactoryTest" time="0.02"/>
+  <testcase name="worldIsRound()" classname="nl.tudelft.jpacman.board.BoardFactoryTest" time="0.024"/>
   <testcase name="connectedNorth()" classname="nl.tudelft.jpacman.board.BoardFactoryTest" time="0.001"/>
   <testcase name="connectedSouth()" classname="nl.tudelft.jpacman.board.BoardFactoryTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>

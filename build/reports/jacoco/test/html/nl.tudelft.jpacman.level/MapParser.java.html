@@ -108,7 +108,7 @@ public class MapParser {
      */
     protected void addSquare(Square[][] grid, List&lt;Ghost&gt; ghosts,
                              List&lt;Square&gt; startPositions, int x, int y, char c) {
-<span class="pc bpc" id="L111" title="1 of 6 branches missed.">        switch (c) {</span>
+<span class="fc bfc" id="L111" title="All 6 branches covered.">        switch (c) {</span>
             case ' ':
 <span class="fc" id="L113">                grid[x][y] = boardCreator.createGround();</span>
 <span class="fc" id="L114">                break;</span>
@@ -130,7 +130,7 @@ public class MapParser {
 <span class="fc" id="L130">                startPositions.add(playerSquare);</span>
 <span class="fc" id="L131">                break;</span>
             default:
-<span class="nc" id="L133">                throw new PacmanConfigurationException(&quot;Invalid character at &quot;</span>
+<span class="fc" id="L133">                throw new PacmanConfigurationException(&quot;Invalid character at &quot;</span>
                     + x + &quot;,&quot; + y + &quot;: &quot; + c);
         }
 <span class="fc" id="L136">    }</span>

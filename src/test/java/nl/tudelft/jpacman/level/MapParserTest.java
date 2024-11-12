@@ -7,7 +7,9 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
-
+import nl.tudelft.jpacman.PacmanConfigurationException;
+import org.junit.jupiter.api.Assertions;
+import org.mockito.MockitoAnnotations;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -41,6 +43,25 @@ public class MapParserTest {
         Mockito.verify(levelFactory, Mockito.times(1)).createGhost();
     }
 
-
+    /**
+     * Test for the parseMap method (bad map with unexpected characters).
+     */
+    @Test
+    public void testParseMapWrong1() {
+        PacmanConfigurationException thrown =
+            Assertions.assertThrows(PacmanConfigurationException.class, () -> {
+                MockitoAnnotations.initMocks(this);
+                assertNotNull(boardFactory);
+                assertNotNull(levelFactory);
+                MapParser mapParser = new MapParser(levelFactory, boardFactory);
+                ArrayList<String> map = new ArrayList<>();
+                // Create a map with an invalid character ('X') which should cause an exception
+                map.add("############");
+                map.add("#P        X#");  // 'X' is an invalid character
+                map.add("############");
+                mapParser.parseMap(map);
+            });
+        Assertions.assertEquals("Invalid character at 10,1: X", thrown.getMessage());
+    }
 }
 

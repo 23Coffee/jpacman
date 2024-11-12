@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="nl.tudelft.jpacman.level.MapParserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-11-12T03:07:48" hostname="DESKTOP-G2KKQ5T" time="1.248">
+  <properties/>
+  <testcase name="testParseMapGood()" classname="nl.tudelft.jpacman.level.MapParserTest" time="1.248"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

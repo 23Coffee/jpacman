@@ -24,7 +24,7 @@
 <span class="fc" id="L24">    Board(Square[][] grid) {</span>
 <span class="pc bpc" id="L25" title="2 of 4 branches missed.">        assert grid != null;</span>
 <span class="fc" id="L26">        this.board = grid;</span>
-<span class="pc bpc" id="L27" title="1 of 4 branches missed.">        assert invariant() : &quot;Initial grid cannot contain null squares&quot;;</span>
+<span class="pc bpc" id="L27" title="2 of 4 branches missed.">        assert invariant() : &quot;Initial grid cannot contain null squares&quot;;</span>
 <span class="fc" id="L28">    }</span>
 
     /**
@@ -34,8 +34,8 @@
     protected final boolean invariant() {
 <span class="fc bfc" id="L35" title="All 2 branches covered.">        for (Square[] row : board) {</span>
 <span class="fc bfc" id="L36" title="All 2 branches covered.">            for (Square square : row) {</span>
-<span class="fc bfc" id="L37" title="All 2 branches covered.">                if (square == null) {</span>
-<span class="fc" id="L38">                    return false;</span>
+<span class="pc bpc" id="L37" title="1 of 2 branches missed.">                if (square == null) {</span>
+<span class="nc" id="L38">                    return false;</span>
                 }
             }
         }
